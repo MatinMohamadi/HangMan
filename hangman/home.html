@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="OnlineTests">
+<head>
+	<meta charset="utf-8">
+	<title>Hanging Man</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header row">
+			<h3 class="text-muted col-md-8">Hanging Man</h3>
+
+			<div class="col-md-4 text-right">
+				<button id="start_mygame" type="button" class="btn btn-success">Start</button>
+				<span id="timer"><span id="mins">10</span>:<span id="snds">00</span></span>
+			</div>
+		</div>
+
+		<main class="row content">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Help this man to guss the currect word:</h3>
+				  </div>
+				  <div class="panel-body text-center">
+						<div class="keyboard">
+							<button disabled class="btn btn-default">A</button>
+							<button disabled class="btn btn-default">B</button>
+							<button disabled class="btn btn-default">C</button>
+							<button disabled class="btn btn-default">D</button>
+							<button disabled class="btn btn-default">E</button>
+							<button disabled class="btn btn-default">F</button>
+							<button disabled class="btn btn-default">G</button>
+							<button disabled class="btn btn-default">H</button>
+							<button disabled class="btn btn-default">I</button>
+							<button disabled class="btn btn-default">J</button>
+							<button disabled class="btn btn-default">K</button>
+							<button disabled class="btn btn-default">L</button>
+							<button disabled class="btn btn-default">M</button>
+							<button disabled class="btn btn-default">N</button>
+							<button disabled class="btn btn-default">O</button>
+							<button disabled class="btn btn-default">P</button>
+							<button disabled class="btn btn-default">Q</button>
+							<button disabled class="btn btn-default">R</button>
+							<button disabled class="btn btn-default">S</button>
+							<button disabled class="btn btn-default">T</button>
+							<button disabled class="btn btn-default">U</button>
+							<button disabled class="btn btn-default">V</button>
+							<button disabled class="btn btn-default">W</button>
+							<button disabled class="btn btn-default">X</button>
+							<button disabled class="btn btn-default">Y</button>
+							<button disabled class="btn btn-default">Z</button>
+						</div>
+						<img id="myimage" src="images/hm0.gif">
+						<br><br>
+						<div class="form-group">
+							<label>Correct letters:
+								<input id="correctr_letter" type="text" class="form-control text-center answer-field"  value="YOUR LUCKY WORD" readonly>
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Wrong letters:
+								<input id="Wrong_letters"  type="text" class="form-control text_center">
+							</label>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<p>&copy; 2016 Company, Inc.</p>
+		</footer>
+	</div>
+
+  <script src="JS/index.js"></script>
+	
+  <script type="text/javascript">
+  new StartGame();
+</script>
+</body>
+</html>
